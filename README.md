@@ -1,12 +1,12 @@
-# Data Warehouse and Analytics Proyect
+# Data Warehouse and Analytics Proyect 📊🚀
 
 Este proyecto presenta un **Data Warehouse integral para soluciones avanzadas de análisis de datos**, abarcando desde la **creación de una base de datos** hasta la **generación de consultas accionables** para la toma de decisiones. Diseñado siguiendo las mejores prácticas de ingeniería de datos y análisis, optimiza el procesamiento, almacenamiento y visualización de la información para ofrecer insights valiosos y estratégicos.
 
 ---
 
-## Requerimientos
+## Requerimientos ⚙️
 
-### Creación de la base de datos (Data Engineering)
+### Creación de la base de datos (Data Engineering) 🛠️
 
 #### Objetivos
 Desarrollar una Base de datos usando SQL Server para consolidar los datos de ventas, que permita un completo analisis de datos e informe para la toma de decisiones.
@@ -20,7 +20,7 @@ Desarrollar una Base de datos usando SQL Server para consolidar los datos de ven
 
 ---
 
-### BI: Análisis y Reporte (Data Analytics)
+### BI: Análisis y Reporte (Data Analytics) 📈
 Desarrollo de analisis basado en SQL para consultas detalaldas de:
 - **Comportamiento de compra**
 - **Rendimiento de producto**
