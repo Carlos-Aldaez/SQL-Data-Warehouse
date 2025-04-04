@@ -1,6 +1,6 @@
 # Data Warehouse and Analytics Proyect
 
-Este proyecto presenta un **Data Warehouse integral y soluciones avanzadas de análisis de datos**, abarcando desde la **creación de una base de datos** hasta la **generación de consultas accionables** para la toma de decisiones. Diseñado siguiendo las mejores prácticas de ingeniería de datos y análisis, optimiza el procesamiento, almacenamiento y visualización de la información para ofrecer insights valiosos y estratégicos.
+Este proyecto presenta un **Data Warehouse integral para soluciones avanzadas de análisis de datos**, abarcando desde la **creación de una base de datos** hasta la **generación de consultas accionables** para la toma de decisiones. Diseñado siguiendo las mejores prácticas de ingeniería de datos y análisis, optimiza el procesamiento, almacenamiento y visualización de la información para ofrecer insights valiosos y estratégicos.
 
 ---
 
