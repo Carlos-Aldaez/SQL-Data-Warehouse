@@ -5,7 +5,7 @@ Crear la Base de datos y esquemas
 Script:
   Este script crea una nueva base de datos 'DataWarehouse' después de verificar si ya existe.
   Si existe la base de datos, se elimina y se crea nuevamente. Así mismo crea tres esquemas en la base de datos: 'bronce', 'plata' y 'oro'.
-/*
+*/
 
 USE MASTER;
 GO
