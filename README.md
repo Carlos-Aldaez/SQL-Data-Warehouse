@@ -6,7 +6,7 @@ Este proyecto presenta un **Data Warehouse integral para soluciones avanzadas de
 
 ## Requerimientos
 
-### Creación de la base d edatos (DAta Engineering)
+### Creación de la base de datos (Data Engineering)
 
 #### Objetivos
 Desarrollar una Base de datos usando SQL Server para consolidar los datos de ventas, que permita un completo analisis de datos e informe para la toma de decisiones.
@@ -20,7 +20,7 @@ Desarrollar una Base de datos usando SQL Server para consolidar los datos de ven
 
 ---
 
-### BI: Analisis y Reporte (Data Analytics)
+### BI: Análisis y Reporte (Data Analytics)
 Desarrollo de analisis basado en SQL para consultas detalaldas de:
 - **Comportamiento de compra**
 - **Rendimiento de producto**
