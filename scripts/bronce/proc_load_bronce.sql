@@ -3,7 +3,18 @@
 Procedimeinto de almacenamiento: Carga de capa bronce (Fuente -> Bronce)
 ================================================================================
 Onjevo del script:
-  
+  Almacenar el procedimeinto de carga de datos externos de los docuemntos CSV en el esquema 'bronce'
+  Ejecuta las siguientes accciones:
+  - Truncar las tablas bronce antes de cargar la data.
+  - Usa el comando 'BULK INSERT' para cargar la data de los archivos CSV en las tablas bronce.
+
+Parametros:
+  None,
+  Este procedimiento almacenado no acepta ningun parametro o retorna ningun valor.
+
+Ejemplo de uso:
+  EXEC bonce.load_bronce;
+================================================================================
 */
 EXEC bronce.load_bronce
   
