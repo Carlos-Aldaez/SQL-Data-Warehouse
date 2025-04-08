@@ -89,6 +89,18 @@ FROM bronce.crm_cus_info
 GROUP BY cst_id
 HAVING COUNT(*) > 1 OR cst_id IS NULL
 
+-- Verificar espacios no deseados
+-- Resultado esperado: No results
+SELECT cst_lastname
+FROM silver.crm_cust_info
+WHERE cst_lastname != TRIM(sct_lastname)
+
+--Estandarizaciòn y consistencia de datos
+SELECT DISTINCT cst_gndr
+FROM bronce.crm_cust_info
+
+--=============================================================
+
 INSERT INTO plata.crm_cust_into (
   cst_id,
   cst_key,
@@ -118,25 +130,25 @@ ROW_NUMBER() OVER (PARTITION BY cst_id ORDER BY cst_create_date DESC) as flag_la
 FROM bronce.crm_cus_info
 ) t WHERE flag_last = 1; -- Seleccionar el valor maas reciente
 
--- Verificar espacios no deseados
--- Resultado esperado: No results
-SELECT cst_lastname
-FROM silver.crm_cust_info
-WHERE cst_lastname != TRIM(sct_lastname)
-
---Estandarizaciòn y consistencia de datos
-SELECT DISTINCT cst_gndr
-FROM bronce.crm_cust_info
 
 SELECT
 prd_id,
 prd_key,
+REPLACE(SUBSTRING(prd_key, 1, 5),'-', '_') AS cat_id,
+SUBSTRING(prd_key, 7, LEN(prd_key)) AS prod_key,
 prd_nm,
-prd_cost,
+ISNULL(prd_cost,0) AS prd_cost,
 prd_line,
+CASE  UPPER(TRIM(prd_line))  
+      WHEN 'M' THEN 'Mountain'
+      WHEN 'R' THEN 'Road'
+      WHEN 'S' THEN 'Other Sales'
+      WHEN 'T' THEN 'Touring'
+      ELSE 'n/a'
+ENS AS prd_line
 prd_start_dt,
 prd_end_dt,
-dwh_create_data
+FROM bronce.crm_prd_info
 --=============================================================
 --=============================================================
 EXEC plata.load_plata;
