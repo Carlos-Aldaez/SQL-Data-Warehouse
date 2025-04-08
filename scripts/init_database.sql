@@ -13,7 +13,7 @@ GO
 -- Eliminar y recrear la base de datos 'DataWarehouse'
 IF EXISTS (SELECT 1 FROM sys.databases WHWRE name = 'DataWarehouse')
 BEGIN
-  ALTER DATABASE DataWarehouse SET SINGLE_USER WITH ROLLBACK INMEDIATE
+  ALTER DATABASE DataWarehouse SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
   DROP DATABASE DataWarehouse;
 END;
 GO
